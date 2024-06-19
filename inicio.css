@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logoINMB{
+text-align: center;
+width: 100%;
+height: 100%;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+
+}
+
+.slider-box{
+width: 600px;
+height: auto;
+margin: 50px auto;
+overflow: hidden;
+}
+
+p{
+    font-size: 120%;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+
+.slider-box img{
+    width: 100%;
+
+}
+
+@keyframes slide{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+
+    .slider-box {
+        width: 100%;
+    }
+
+}
+
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items:center;
+    margin-right: 15px;
+}
+
+
+.btn{
+    position:relative;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+    overflow: hidden;
+    border: 3px solid  #a9cf46;
+    z-index: 1;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -100%;
+    background-color:  #a9cf46;
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.btn:hover::before{
+    top: 0;
+    border-radius: 0%;
+}
+
+section{
+    width: 700px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+   flex-direction: column;
+    gap: 20px;
+ }
+ 
+ summary{
+    width: 300px;
+    background-color: #a9cf46;
+    color: #282630;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+ }
+
+ p{
+    padding: 10px;
+ }
+
+ .RedesSociales{
+    background-color: #a9cf46;
+    width: 100%;
+ }
+ 
+ .linkText{
+    color: #000;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #a9cf46;
+ }
+ 
+ .fotos{
+    margin: 10px;
+    margin-bottom: 20px;
+ }
